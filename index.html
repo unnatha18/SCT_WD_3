@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="quiz-container">
+        <header>
+            <h1>Quiz Challenge</h1>
+            <p>Test your knowledge!</p>
+        </header>
+
+        <section id="quiz-screen">
+            <div class="quiz-info">
+                <span id="question-number">Question 1 of 10</span>
+                <span id="score">Score: 0</span>
+            </div>
+
+            <div class="progress-bar">
+                <div id="progress"></div>
+            </div>
+
+            <h2 id="question">Question appears here</h2>
+
+            <div id="options" class="options"></div>
+
+            <p id="feedback" aria-live="polite"></p>
+
+            <button id="next-btn" disabled>Next Question</button>
+        </section>
+
+        <section id="result-screen" hidden>
+            <h2>Quiz Completed!</h2>
+            <p id="result-message"></p>
+            <p id="final-score"></p>
+            <button id="restart-btn">Restart Quiz</button>
+        </section>
+
+        <footer>SkillCraft Technology | Task 03</footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
